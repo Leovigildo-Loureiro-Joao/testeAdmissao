@@ -140,14 +140,14 @@ windows_bin/admin.exe
 
 ### 4. Realizar Teste como Aluno
 
-bash
+``` bash
 
 # No Linux
 ./bin/aluno
 
 # No Windows
 windows_bin/aluno.exe
-
+```
 ## 🏗️ Estruturas de Dados Principais
 
 ### Curso
