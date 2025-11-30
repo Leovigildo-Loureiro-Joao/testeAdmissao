@@ -66,7 +66,7 @@ projeto/
 
 ### Compilação
 
-bash
+``` bash
 
 # Compilar tudo
 make all
@@ -82,22 +82,22 @@ make clean
 
 # Ajuda com todos os comandos
 make help
-
+```
 ## 📋 Como Usar
 
 ### 1. Executar como Administrador
 
-bash
+``` bash
 
 # No Linux
 ./bin/admin
 
 # No Windows  
 windows_bin/admin.exe
-
+```
 **Menu do Administrador:**
 
-text
+```text
 
 ======================================
      Bem vindo Administrador
@@ -107,7 +107,7 @@ text
 3-Ver Provas
 4-Visualizar Resultados
 5-Sair
-
+```
 ### 2. Criar um Novo Curso
 
 1. Selecionar "1-Criar Prova"
@@ -152,37 +152,37 @@ windows_bin/aluno.exe
 
 ### Curso
 
-c
+```c
 
 typedef struct {
     char nome[100];
     int num_disc;
     Teste teste[20];  // Array de disciplinas
 } Curso;
-
+```
 ### Teste (Disciplina)
 
-c
+```c
 
 typedef struct {
     char nome[100];
     int qtd;          // Número de questões
     Question asks[20]; // Array de questões
 } Teste;
-
+```
 ### Questão
 
-c
+```c
 
 typedef struct {
     char question[200];
     char solution[200];    // Resposta correta
     char other[3][200];    // Respostas incorretas
 } Question;
-
+```
 ### Aluno
 
-c
+```c
 
 typedef struct {
     int numInscricao;
@@ -190,7 +190,7 @@ typedef struct {
     char curso[100];
     float media;        // Média final (0-20)
 } Aluno;
-
+```
 ## 💾 Armazenamento de Dados
 
 - **Formato**: Arquivos binários (.dat)
