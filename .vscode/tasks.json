@@ -1,0 +1,107 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-admin-linux",
+            "type": "shell",
+            "command": "make",
+            "args": ["admin"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o Admin para Linux"
+        },
+        {
+            "label": "build-aluno-linux",
+            "type": "shell", 
+            "command": "make",
+            "args": ["aluno"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o Aluno para Linux"
+        },
+        {
+            "label": "build-admin-windows",
+            "type": "shell",
+            "command": "make",
+            "args": ["admin-win"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o Admin para Windows"
+        },
+        {
+            "label": "build-aluno-windows",
+            "type": "shell",
+            "command": "make",
+            "args": ["aluno-win"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o Aluno para Windows"
+        },
+        {
+            "label": "build-all-linux",
+            "type": "shell",
+            "command": "make",
+            "args": ["all"],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila tudo para Linux"
+        },
+        {
+            "label": "build-windows",
+            "type": "shell",
+            "command": "make",
+            "args": ["windows"],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila tudo para Windows"
+        },
+        {
+            "label": "build-all-systems",
+            "type": "shell",
+            "command": "make",
+            "args": ["all-systems"],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila para Linux e Windows"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Limpa todos os arquivos compilados"
+        },
+        {
+            "label": "check-dependencies",
+            "type": "shell",
+            "command": "make",
+            "args": ["check-deps"],
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Verifica dependências do sistema"
+        },
+        {
+            "label": "test-windows-build",
+            "type": "shell",
+            "command": "make",
+            "args": ["test-windows"],
+            "group": "test",
+            "problemMatcher": [],
+            "detail": "Testa os executáveis Windows no Wine"
+        }
+    ]
+}
