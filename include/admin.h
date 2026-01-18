@@ -2,7 +2,7 @@
 #ifndef ADMIN
 
     #define ADMIN
-    #define linha "======================================\n"
+    #define linha "===========================================================\n"
     typedef struct {
         int numInscricao;
         char nome[100];

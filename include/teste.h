@@ -60,5 +60,7 @@
     Answer* buildRandomSolution(Question teste);
 
     void VerResultados();
+    
+    int mainAluno();
 
 #endif
